@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String GetUsersJson = '''{
+const String getUsersJson = '''{
   "users": [
     {
       "UserUniqId":1,
@@ -30,7 +30,7 @@ String GetUsersJson = '''{
   ]
 }''';
 
-String GetRoomList = '''{
+const String getRoomList = '''{
   "UserUniqId":5,
   "rooms":[
     {"roomUniqId":2, "RoomName":"Second Room","Currency":"RUB","total": 12299,"messageCount":3},
@@ -40,7 +40,7 @@ String GetRoomList = '''{
 }
 ''';
 
-String GetHistoryId1Json = '''{
+const String getHistoryId1Json = '''{
   "roomUniqId":1,
   "selectedDate":"2022-05-17",
   "transactions":[
@@ -57,7 +57,7 @@ String GetHistoryId1Json = '''{
   ]
 }''';
 
-String GetHistoryId2Json = '''{
+const String getHistoryId2Json = '''{
   "roomUniqId":1,
   "selectedDate":"2022-05-18",
   "transactions":[
@@ -74,7 +74,7 @@ String GetHistoryId2Json = '''{
   ]
 }''';
 
-String GetHistoryId3Json = '''{
+const String getHistoryId3Json = '''{
   "roomUniqId":1,
   "selectedDate":"2022-05-19",
   "transactions":[
@@ -91,7 +91,7 @@ String GetHistoryId3Json = '''{
   ]
 }''';
 
-String GetMessagesJson = '''{
+const String getMessagesJson = '''{
   "messagesCount":3,
   "Messages":[
     { "messageId":1,
@@ -117,7 +117,7 @@ String GetMessagesJson = '''{
   ]
 }''';
 
-String RoomDescription1Json = '''{
+const String goomDescription1Json = '''{
   "RoomUniqId":1,
   "RoomName":"First Room",
   "RoomDescription":"The first room",
@@ -144,7 +144,7 @@ String RoomDescription1Json = '''{
   ]
 }''';
 
-String RoomDescription2Json = '''{
+const String roomDescription2Json = '''{
   "RoomUniqId":2,
   "RoomName":"Second Room",
   "RoomDescription":"The second room",
@@ -166,7 +166,7 @@ String RoomDescription2Json = '''{
 }
 ''';
 
-String RoomDescription3Json = '''{
+const String roomDescription3Json = '''{
   "RoomUniqId":3,
   "RoomName":"Third Room",
   "RoomDescription":"The third room",
@@ -194,7 +194,7 @@ String RoomDescription3Json = '''{
 }
 ''';
 
-String RoomDescription4Json = '''{
+const String roomDescription4Json = '''{
   "RoomUniqId":4,
   "RoomName":"Fourth Room",
   "RoomDescription":"The fourth room",

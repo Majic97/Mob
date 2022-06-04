@@ -24,7 +24,7 @@ ThunkAction loadRoomListThunkAction = (Store store) async {
 
   await Future.delayed(const Duration(seconds: 4));
   store.dispatch(
-      SetListViewWidget(RoomListData: parseJsonToRoomListData(GetRoomList)));
+      SetListViewWidget(RoomListData: parseJsonToRoomListData(getRoomList)));
 };
 
 List<RoomState> parseJsonToRoomListData(String jsonData) {

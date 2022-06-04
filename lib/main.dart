@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'chatlist/chatlist_page.dart';
 import 'chatlist/page_state.dart';
+import 'package:diadot/chatlist/actions.dart';
 import 'package:diadot/source/json_source.dart';
 import 'dart:convert';
 import 'package:redux/redux.dart';
@@ -18,6 +19,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    StoreProvider.of<PageState>(context).dispatch(
+        loadRoomListThunkAction(StoreProvider.of<PageState>(context)));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
